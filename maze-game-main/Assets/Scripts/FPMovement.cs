@@ -47,9 +47,20 @@ public class FPMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if(hit.gameObject.CompareTag("teleporter"))
+        //teleporter!!
+        if(hit.gameObject.name == "Teleporter1")
         {
             gameObject.transform.position = new Vector3(44.17f, transform.position.y, transform.position.z);
         }
+
+        //jumpPad!! copied jump script from above
+        if(hit.gameObject.name == "JumpPad")
+        {
+            velocity.y = Mathf.Sqrt(3f * -2f * gravity);
+            velocity.y += gravity * Time.deltaTime;
+            controller.Move(velocity * Time.deltaTime);
+        }
     }
+
+    
 }
