@@ -8,7 +8,7 @@ public class FPMovement : MonoBehaviour
 
     public float speed = 12f;
     public float gravity = -9.81f;
-    public float jumpHeight = .5f;
+    public float jumpHeight = .8f;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
