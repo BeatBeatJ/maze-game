@@ -33,6 +33,7 @@ public class FPMovement : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
 
+
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
@@ -41,5 +42,14 @@ public class FPMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.gameObject.CompareTag("teleporter"))
+        {
+            gameObject.transform.position = new Vector3(44.17f, transform.position.y, transform.position.z);
+        }
     }
 }
