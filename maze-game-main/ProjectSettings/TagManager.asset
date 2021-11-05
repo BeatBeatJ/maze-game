@@ -7,6 +7,8 @@ TagManager:
   - teleporter
   - Bullet
   - Fist
+  - Turret
+  - Environment
   layers:
   - Default
   - TransparentFX
