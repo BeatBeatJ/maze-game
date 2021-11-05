@@ -9,7 +9,7 @@ public class Button : MonoBehaviour
     void OnTriggerEnter (Collider user)
     {
         
-        if(user.gameObject.name == "Player")
+        if(user.gameObject.tag == "Player" || user.gameObject.tag == "Fist")
         {
             Debug.Log("Button pressed");
             target.SendMessage("TurnOn");
