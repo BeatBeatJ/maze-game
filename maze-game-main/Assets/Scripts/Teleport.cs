@@ -6,7 +6,6 @@ public class Teleport : MonoBehaviour
 {
     public GameObject Player;
     public GameObject TeleportTo;
-    public GameObject StartTeleporter;
  
     void OnTriggerEnter (Collider user)
     {

@@ -6454,7 +6454,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682969956}
-  m_LocalRotation: {x: 0.3826835, y: -0.000000015896624, z: 0.000000006584597, w: 0.92387956}
+  m_LocalRotation: {x: 0.3826835, y: 0.000000015896621, z: -0.000000006584596, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7600,7 +7600,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 841336038}
   TeleportTo: {fileID: 1374156731}
-  StartTeleporter: {fileID: 762058572}
 --- !u!23 &762058575
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12041,7 +12040,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 841336038}
   TeleportTo: {fileID: 474972199}
-  StartTeleporter: {fileID: 1169405848}
 --- !u!23 &1169405851
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14464,7 +14462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374156731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.89, y: 30.02, z: 64}
+  m_LocalPosition: {x: -45.61, y: 30.02, z: 64}
   m_LocalScale: {x: 0.26246813, y: 0.26246813, z: 0.26246813}
   m_Children: []
   m_Father: {fileID: 0}
