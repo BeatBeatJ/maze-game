@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-    public GameObject Player;
+    //public GameObject Player;
     public GameObject TeleportTo;
  
     void OnTriggerEnter (Collider user)
     {
-        if(user.gameObject.name == "Player")
+        if(user.gameObject.tag == "Player")
         {
-            Player.transform.position = TeleportTo.transform.position;
+            user.transform.position = TeleportTo.transform.position;
         }
     }
 }
