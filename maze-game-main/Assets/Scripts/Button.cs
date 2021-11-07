@@ -5,15 +5,32 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
    public GameObject target = null;
+   private bool TurnedOn = false;
+  
+    void Update()
+    {
+      
+
+    }
 
     void OnTriggerEnter (Collider user)
     {
         
-        if(user.gameObject.tag == "Player" || user.gameObject.tag == "Fist")
+        if(user.gameObject.tag == "Fist" && TurnedOn == false)
         {
-            Debug.Log("Button pressed");
-            target.SendMessage("TurnOn");
+            TurnedOn = true;
             gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
+            Debug.Log("Button pressed ON");
+            target.SendMessage("TurnOn");
         }
+
+        //if(user.gameObject.tag == "Fist" && TurnedOn == true)
+        //{
+            //TurnedOn = false;
+            //gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            //Debug.Log("Button pressed OFF");
+            //target.SendMessage("TurnOff");
+        //}
+        
     } 
 }

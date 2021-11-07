@@ -15,4 +15,9 @@ public class DoorAnimation : MonoBehaviour
     {
         Animator.SetBool("ButtonPressed", true);
     }
+
+    void TurnOff()
+    {
+        Animator.SetBool("ButtonPressed", false);
+    }
 }
