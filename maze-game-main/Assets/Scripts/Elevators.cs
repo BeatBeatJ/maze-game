@@ -18,6 +18,7 @@ public class Elevators : MonoBehaviour
         ButtonPressed = true;
         Debug.Log("Elevator Activated");
     }
+    
 
     public void ElevatorMove()
     {
